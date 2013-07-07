@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".SudokuFragment"
+    android:orientation="vertical"
+    android:background="@drawable/fragment_bg">
+
+    <RelativeLayout
+        android:id="@+id/sudoku_timer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/sudoku_timer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="Start"/>
+
+        <Chronometer
+            android:id="@+id/sudoku_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sudoku_board_bg"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <com.gfranks.sudoku.widgets.SudokuBoard
+            android:id="@+id/sudoku_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:layout_gravity="center">
+        </com.gfranks.sudoku.widgets.SudokuBoard>
+    </LinearLayout>
+
+</LinearLayout>

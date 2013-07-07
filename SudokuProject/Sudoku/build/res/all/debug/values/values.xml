@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sudoku_menu_timer_hide">
+        <item>New Game</item>
+        <item>Restart</item>
+        <item>Hide Timer</item>
+        <item>Check For Win</item>
+    </string-array>
+    <string-array name="sudoku_menu_timer_show">
+        <item>New Game</item>
+        <item>Restart</item>
+        <item>Show Timer</item>
+        <item>Check For Win</item>
+    </string-array>
+
+    <color name="beige">#f5f5f5</color>
+    <color name="black">#ff000000</color>
+    <color name="black_lighter">#292929</color>
+    <color name="dark_blue_off">#2291B7</color>
+    <color name="dark_gray">#FF444444</color>
+    <color name="dark_green">#2f6945</color>
+    <color name="darker_blue_off">#19678F</color>
+    <color name="darkest_blue_off">#135F7E</color>
+    <color name="gray">#cccccc</color>
+    <color name="green">#2f9945</color>
+    <color name="grid_gray">#cdcdcd</color>
+    <color name="grid_gray_dark">#6d6d6d</color>
+    <color name="light_blue">#5ab2d6</color>
+    <color name="light_blue_off">#2EB4D9</color>
+    <color name="light_gray">#e9e9e9</color>
+    <color name="red">#992111</color>
+    <color name="white">#ffffff</color>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_defaultsize_h">589.0dip</dimen>
+    <dimen name="app_defaultsize_w">632.0dip</dimen>
+    <dimen name="app_minimumsize_h">299.0dip</dimen>
+    <dimen name="app_minimumsize_w">316.0dip</dimen>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_undo_last">Undo</string>
+    <string name="app_name">Sudoku</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sudoku_fragment">Sudoku</string>
+    <string name="title_activity_sudoku_grid">MainActivity</string>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PopupDialog" parent="android:Theme.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+</resources>

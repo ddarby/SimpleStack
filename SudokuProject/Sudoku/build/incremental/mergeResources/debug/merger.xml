@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res" >
+            <file
+                name="simple"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/anim/simple.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="action_undo"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/action_undo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_blue"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_blue.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_blue_normal"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_blue_normal.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_blue_pressed"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_blue_pressed.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_selector"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_selector_normal"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_selector_normal.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_selector_selected"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/btn_selector_selected.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="close_btn"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/close_btn.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="fragment_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/fragment_bg.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="popup_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/popup_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="sudoku_board_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/sudoku_board_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tv_active_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/tv_active_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tv_normal_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable/tv_normal_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="action_search"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/action_search.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="close_btn"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/close_btn.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/drawer_shadow.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="fragment_bg"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/fragment_bg.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/ic_drawer.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="action_search"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-mdpi/action_search.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-mdpi/drawer_shadow.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-mdpi/ic_drawer.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="action_search"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-xhdpi/action_search.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="drawer_shadow"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-xhdpi/drawer_shadow.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_drawer"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-xhdpi/ic_drawer.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="drawer_list_item"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/layout/drawer_list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="fragment_sudoku"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/layout/fragment_sudoku.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="popup_numberpicker"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/layout/popup_numberpicker.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="popup_numberselector"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/layout/popup_numberselector.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="sudoku_grid"
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/menu/sudoku_grid.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values/attrs.xml"
+                qualifiers="" />
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="black_lighter" >#292929
+                </color>
+                <color name="green" >#2f9945
+                </color>
+                <color name="grid_gray" >#cdcdcd
+                </color>
+                <color name="red" >#992111
+                </color>
+                <color name="light_gray" >#e9e9e9
+                </color>
+                <color name="dark_green" >#2f6945
+                </color>
+                <color name="light_blue_off" >#2EB4D9
+                </color>
+                <color name="gray" >#cccccc
+                </color>
+                <color name="dark_gray" >#FF444444
+                </color>
+                <color name="light_blue" >#5ab2d6
+                </color>
+                <color name="dark_blue_off" >#2291B7
+                </color>
+                <color name="beige" >#f5f5f5
+                </color>
+                <color name="darker_blue_off" >#19678F
+                </color>
+                <color name="darkest_blue_off" >#135F7E
+                </color>
+                <color name="grid_gray_dark" >#6d6d6d
+                </color>
+                <color name="white" >#ffffff
+                </color>
+                <color name="black" >#ff000000
+                </color>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="app_minimumsize_w" >316.0dip
+                </dimen>
+                <dimen name="app_minimumsize_h" >299.0dip
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="app_defaultsize_w" >632.0dip
+                </dimen>
+                <dimen name="app_defaultsize_h" >589.0dip
+                </dimen>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="action_settings" >Settings
+                </string>
+
+                <string-array name="sudoku_menu_timer_show" >
+                    <item>
+New Game
+                    </item>
+                    <item>
+Restart
+                    </item>
+                    <item>
+Show Timer
+                    </item>
+                    <item>
+Check For Win
+                    </item>
+                </string-array>
+
+                <string name="title_activity_sudoku_grid" >MainActivity
+                </string>
+                <string name="app_name" >Sudoku
+                </string>
+
+                <string-array name="sudoku_menu_timer_hide" >
+                    <item>
+New Game
+                    </item>
+                    <item>
+Restart
+                    </item>
+                    <item>
+Hide Timer
+                    </item>
+                    <item>
+Check For Win
+                    </item>
+                </string-array>
+
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="drawer_open" >Open navigation drawer
+                </string>
+                <string name="action_undo_last" >Undo
+                </string>
+                <string name="drawer_close" >Close navigation drawer
+                </string>
+                <string name="app_not_available" >Sorry, there\'s no web browser available
+                </string>
+                <string name="title_activity_sudoku_fragment" >Sudoku
+                </string>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="PopupDialog"
+                    parent="android:Theme.Dialog" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                    <item name="android:windowContentOverlay">
+@null
+                    </item>
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@null
+                    </item>
+                    <item name="android:windowAnimationStyle">
+@android:style/Animation.Dialog
+                    </item>
+                    <item name="android:windowSoftInputMode">
+stateUnspecified|adjustPan
+                    </item>
+                </style>
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values-sw600dp/dimens.xml"
+                qualifiers="sw600dp" />
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+        </source>
+        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/debug/res" />
+    </dataSet>
+
+</merger>
