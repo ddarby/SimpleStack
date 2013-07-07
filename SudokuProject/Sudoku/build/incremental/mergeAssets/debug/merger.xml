@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/main/assets" />
+        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SudokuProject/Sudoku/src/debug/assets" />
+        <source path="/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/debug/assets" />
     </dataSet>
 
 </merger>
