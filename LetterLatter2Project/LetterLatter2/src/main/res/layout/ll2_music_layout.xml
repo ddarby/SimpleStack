@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:background="@drawable/green_button">
+
+    <TextView  android:id="@+id/music_marquee"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical|left"
+               android:text="Song Selector - "/>
+
+    <Spinner android:id="@+id/music_spinner"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:spinnerMode="dialog"
+             android:dropDownSelector="@android:drawable/ic_media_play"
+             android:layout_gravity="center_vertical|right"/>
+</LinearLayout>

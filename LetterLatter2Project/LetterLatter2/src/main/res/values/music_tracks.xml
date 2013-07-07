@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="track_array">
+        <item>Chill Revolution - Unknown</item>
+        <item>ITEM1</item>
+        <item>ITEM2</item>
+        <item>ITEM3</item>
+        <item>ITEM4</item>
+        <item>ITEM5</item>
+        <item>ITEM6</item>
+        <item>ITEM7</item>
+    </string-array>
+</resources>
