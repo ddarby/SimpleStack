@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -24,12 +23,13 @@ public class MainActivity extends Activity {
     MediaPlayer mPlayer;
     TextView musicMarquee;
     ArrayAdapter<CharSequence> spinnerAdapter;
-
+    //This Worked
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ll2_main_layout);
-
+        //THESE CHANGES ARE BEING MADE AND THIS WORKS
+        //InputStream is = getResources().openRawResource(R.raw.test);
         /*SETTING UP ALPHABET SCROLL*/
         View.OnClickListener alphabetListener;
         alphabetListener = new View.OnClickListener() {
@@ -37,6 +37,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 textToReplace.setText(((TextView) view).getText());
                 alphabetTL.setVisibility(View.INVISIBLE);
+
             }
         };
 
@@ -55,7 +56,7 @@ public class MainActivity extends Activity {
             //Log.d("alphabet_test","["+(ch)+"]");
             alphabetButton.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT, 1f));
             alphabetButton.setText(ch + "");
-            alphabetButton.setTextAppearance(getApplicationContext(), android.R.style.TextAppearance_Medium);
+            alphabetButton.setTextAppearance(this, android.R.style.TextAppearance_Medium);
             alphabetButton.setOnClickListener(alphabetListener);
             alphabetRow.addView(alphabetButton);
 
