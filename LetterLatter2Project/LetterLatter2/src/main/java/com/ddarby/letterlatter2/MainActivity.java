@@ -14,7 +14,14 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 
 public class MainActivity extends Activity {
@@ -23,13 +30,49 @@ public class MainActivity extends Activity {
     MediaPlayer mPlayer;
     TextView musicMarquee;
     ArrayAdapter<CharSequence> spinnerAdapter;
-    //This Worked
+    HashMap<Character, Set<String>> bigguy = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ll2_main_layout);
-        //THESE CHANGES ARE BEING MADE AND THIS WORKS
-        //InputStream is = getResources().openRawResource(R.raw.test);
+
+
+        //ALL READING IN FILE AND SETTING "bigguy" STRUCTURE
+        InputStream in = null;
+        BufferedReader br;
+        bigguy = new HashMap<Character, Set<String>>();
+        try {
+            in = getResources().openRawResource(R.raw.alphabet_set);
+            br = new BufferedReader(new InputStreamReader(in));
+            bigguy = new HashMap<Character, Set<String>>();
+            String s;
+            while (!(s = br.readLine()).equals("-1")) {
+                Set<String> set = new HashSet<String>();
+                String[] temp = s.split(" +");
+                Character letter = temp[0].charAt(0);
+                for (String str : temp) {
+                    set.add(str);
+                }
+                bigguy.put(letter, set);
+            }
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } finally {
+            try {
+                in.close();
+            } catch (IOException ioe) {
+                ioe.printStackTrace();
+            }
+        }
+
+        //PRINTS ALL WORDS
+        /*Set<Map.Entry<Character,Set<String>>> entrySet = bigguy.entrySet();
+        for (Map.Entry<Character,Set<String>> entry : entrySet) {// iterates through ALL 26 [DONT HAVE TO!!!]
+            for(String str : entry.getValue()){
+                Log.d(entry.getKey().toString(),str);
+            }
+        }*/
         /*SETTING UP ALPHABET SCROLL*/
         View.OnClickListener alphabetListener;
         alphabetListener = new View.OnClickListener() {
@@ -60,7 +103,7 @@ public class MainActivity extends Activity {
             alphabetButton.setOnClickListener(alphabetListener);
             alphabetRow.addView(alphabetButton);
 
-            if(i==25){//Unnecessarily in this for loop
+            if (i == 25) {//Unnecessarily in this for loop
                 Button closeButton = new Button(this);
                 closeButton.setText("Close");
                 alphabetRow.addView(closeButton);
@@ -88,7 +131,7 @@ public class MainActivity extends Activity {
 
 
         /*SETTING UP SCROLLING MARQUEE FOR MUSIC?? OR INFO??*/
-        TextView txtView=(TextView) findViewById(R.id.music_marquee);
+        TextView txtView = (TextView) findViewById(R.id.music_marquee);
         txtView.setSelected(true);
         txtView.setSelectAllOnFocus(true);
 
@@ -97,7 +140,7 @@ public class MainActivity extends Activity {
 
 
         /*CHRONOMETER STUFF*/
-        Chronometer timer = (Chronometer)findViewById(R.id.gameChronometer);
+        Chronometer timer = (Chronometer) findViewById(R.id.gameChronometer);
         timer.setFormat("%s");
         timer.start();
 
@@ -105,11 +148,11 @@ public class MainActivity extends Activity {
 
 
         /*SETTING UP FOR LEFT AND RIGHT LIST PANES*/
-        ListView leftPaneLV = (ListView)findViewById(R.id.leftListPane);
-        ListView rightPaneLV = (ListView)findViewById(R.id.rightListPane);
+        ListView leftPaneLV = (ListView) findViewById(R.id.leftListPane);
+        ListView rightPaneLV = (ListView) findViewById(R.id.rightListPane);
 
         ArrayList<String> leftList = new ArrayList<String>();
-        for(int i=0; i<20; i++){
+        for (int i = 0; i < 20; i++) {
             leftList.add("ABCD");
         }
 
@@ -122,14 +165,14 @@ public class MainActivity extends Activity {
 
 
         /*SETTING UP MUSIC*/
-        musicMarquee = (TextView)findViewById(R.id.music_marquee);
-        mPlayer = MediaPlayer.create(this,R.raw.chill_revolution);
+        musicMarquee = (TextView) findViewById(R.id.music_marquee);
+        mPlayer = MediaPlayer.create(this, R.raw.chill_revolution);
         getResources().getResourceName(R.raw.chill_revolution);
 
         mPlayer.start();
         mPlayer.setLooping(true);
 
-        Spinner musicSpinner = (Spinner)findViewById(R.id.music_spinner);
+        Spinner musicSpinner = (Spinner) findViewById(R.id.music_spinner);
         spinnerAdapter = ArrayAdapter.createFromResource(this, R.array.track_array, android.R.layout.simple_spinner_item);
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         musicSpinner.setAdapter(spinnerAdapter);
@@ -145,8 +188,8 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public void onDestroy(){
-        Log.d("WILL THIS PRINT?","HAS BEEN DESTROYED!!");
+    public void onDestroy() {
+        Log.d("WILL THIS PRINT?", "HAS BEEN DESTROYED!!");
         mPlayer.stop();
         super.onDestroy();
     }
@@ -156,7 +199,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 alphabetTL.setVisibility(alphabetTL.getVisibility() == View.INVISIBLE ? View.VISIBLE : View.INVISIBLE);
-                textToReplace = (Button)view;
+                textToReplace = (Button) view;
             }
         };
     }
