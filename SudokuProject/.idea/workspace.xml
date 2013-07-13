@@ -26,7 +26,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57b2321e-59d2-4e79-b3d0-07e93fbd4159" name="Default" comment="" />
+    <list default="true" id="57b2321e-59d2-4e79-b3d0-07e93fbd4159" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku/Sudoku.iml" afterPath="$PROJECT_DIR$/Sudoku/Sudoku.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku/build.gradle" afterPath="$PROJECT_DIR$/Sudoku/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Sudoku.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +54,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -85,6 +90,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -108,19 +114,28 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="645">
+            <state line="35" column="0" selection-start="1724" selection-end="1724" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuMoveDialog.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SudokuMoveDialog.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/dialogs/SudokuMoveDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="5" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.18209408" vertical-offset="675" max-vertical-offset="1815">
+            <state line="63" column="29" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1815">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Sudoku/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="19" selection-start="324" selection-end="324" vertical-scroll-proportion="0.53781515" vertical-offset="78" max-vertical-offset="435">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,6 +174,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
       <map>
@@ -171,29 +194,33 @@
           <key>
             <ExternalProjectPojo>
               <option name="name" value="SudokuProject" />
-              <option name="path" value="$PROJECT_DIR$/build.gradle" />
+              <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
                 <option name="name" value="SudokuProject" />
-                <option name="path" value="$PROJECT_DIR$/build.gradle" />
+                <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value="Sudoku" />
-                <option name="path" value="$PROJECT_DIR$/Sudoku/build.gradle" />
+                <option name="path" value="$PROJECT_DIR$/Sudoku" />
               </ExternalProjectPojo>
             </list>
           </value>
         </entry>
       </map>
     </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1373007077000" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Sudoku/src/main/res/drawable/popup_bg.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/res/layout/fragment_sudoku.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/res/drawable/btn_selector.xml" />
@@ -205,20 +232,21 @@
         <option value="$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/fragments/SudokuFragment.java" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/res/layout/popup_numberselector.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/Sudoku/build.gradle" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/dialogs/SudokuMoveDialog.java" />
+        <option value="$PROJECT_DIR$/Sudoku/build.gradle" />
+        <option value="$PROJECT_DIR$/Sudoku/Sudoku.iml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="12" />
     <option name="y" value="22" />
-    <option name="width" value="1323" />
-    <option name="height" value="820" />
+    <option name="width" value="1403" />
+    <option name="height" value="794" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -245,7 +273,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -516,17 +543,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="ed18ee8c" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -707,8 +736,28 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="22" width="1323" height="820" extended-state="0" />
+    <frame x="12" y="22" width="1403" height="794" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -716,25 +765,25 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4287834" sideWeight="0.5003685" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32428572" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4287834" sideWeight="0.49963155" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32285714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1661721" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.72636104" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.42599842" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2685983" sideWeight="0.75857145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26823875" sideWeight="0.57121664" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24074075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22352941" sideWeight="0.89" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -799,13 +848,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="231" selection-end="240" vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku/src/main/res/drawable/btn_selector_normal.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="48" selection-start="589" selection-end="589" vertical-scroll-proportion="0.5080214" vertical-offset="0" max-vertical-offset="561">
@@ -819,13 +861,6 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="36" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-9.481482" vertical-offset="314" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/widget_helpers/SudokuGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="9" selection-start="4437" selection-end="4437" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
@@ -847,20 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/fragments/SudokuFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="29" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0" vertical-offset="852" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440" />
@@ -876,9 +897,39 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/build.gradle">
+    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435" />
+        <state line="10" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.29821074" vertical-offset="0" max-vertical-offset="503">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="35" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1724" selection-end="1724" vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/fragments/SudokuFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="29" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0" vertical-offset="852" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/widget_helpers/SudokuGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="9" selection-start="4437" selection-end="4437" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2040">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/widgets/SudokuBoard.java">
@@ -888,26 +939,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/res/values/dimens.xml">
+    <entry file="file://$PROJECT_DIR$/Sudoku/Sudoku.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="424" selection-end="424" vertical-scroll-proportion="0.29821074" vertical-offset="0" max-vertical-offset="503">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sudoku/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="645">
-          <folding />
-        </state>
+        <state line="7" column="31" selection-start="366" selection-end="366" vertical-scroll-proportion="0.21028037" vertical-offset="15" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sudoku/src/main/java/com/gfranks/sudoku/dialogs/SudokuMoveDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="5" selection-start="1693" selection-end="1693" vertical-scroll-proportion="0.18209408" vertical-offset="675" max-vertical-offset="1815">
+        <state line="63" column="29" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="1815">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="324" selection-end="324" vertical-scroll-proportion="0.53781515" vertical-offset="78" max-vertical-offset="435">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +979,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android</last-edited>
+          <last-edited>Android-Gradle (SudokuProject)|Android-Gradle</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -965,11 +1014,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SudokuProject</last-edited>
+          <last-edited>Sudoku</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
