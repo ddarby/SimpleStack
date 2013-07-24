@@ -26,6 +26,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.gfranks.sudoku.R;
+import com.gfranks.sudoku.dialogs.SudokuHUD;
 import com.gfranks.sudoku.fragments.SudokuFragment;
 
 public class MainActivity extends Activity {
@@ -38,6 +39,7 @@ public class MainActivity extends Activity {
     private int current_orientation;
     private ImageView logoImageView;
     private boolean splashShowing = true;
+    private SudokuHUD hud;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,8 +130,11 @@ public class MainActivity extends Activity {
     public void showSplashScreen() {
         Animation mAnim = AnimationUtils.loadAnimation(this, R.anim.simple);
         mAnim.setDuration(2000);
+        hud = new SudokuHUD(this);
+        hud.show();
         mAnim.setAnimationListener(new Animation.AnimationListener(){
             public void onAnimationEnd(Animation animation) {
+                hud.dismiss();
                 logoImageView.setVisibility(View.GONE);
                 setupSudokuFragment();
                 splashShowing = false;

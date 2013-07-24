@@ -12,12 +12,16 @@ public final class R {
         public static final int simple=0x7f040000;
     }
     public static final class array {
+        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
+         */
         public static final int sudoku_menu_timer_hide=0x7f050000;
         public static final int sudoku_menu_timer_show=0x7f050001;
     }
     public static final class attr {
     }
     public static final class color {
+        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/colors.xml 
+         */
         public static final int beige=0x7f060000;
         public static final int black=0x7f060001;
         public static final int black_lighter=0x7f060002;
@@ -37,6 +41,9 @@ public final class R {
         public static final int white=0x7f060010;
     }
     public static final class dimen {
+        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/dimens.xml 
+ From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-sw720dp-land/dimens.xml 
+         */
         public static final int activity_horizontal_margin=0x7f070000;
         public static final int activity_vertical_margin=0x7f070001;
         public static final int app_defaultsize_h=0x7f070002;
@@ -59,28 +66,31 @@ public final class R {
         public static final int ic_drawer=0x7f02000b;
         public static final int ic_launcher=0x7f02000c;
         public static final int popup_bg=0x7f02000d;
-        public static final int sudoku_board_bg=0x7f02000e;
-        public static final int tv_active_bg=0x7f02000f;
-        public static final int tv_normal_bg=0x7f020010;
+        public static final int popup_hud_bg=0x7f02000e;
+        public static final int sudoku_board_bg=0x7f02000f;
+        public static final int tv_active_bg=0x7f020010;
+        public static final int tv_normal_bg=0x7f020011;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0015;
-        public static final int action_undo_last=0x7f0b0014;
+        public static final int action_settings=0x7f0b0017;
+        public static final int action_undo_last=0x7f0b0016;
         public static final int content_frame=0x7f0b0001;
         public static final int drawer_layout=0x7f0b0000;
+        public static final int hud_progress_bar=0x7f0b0008;
+        public static final int hud_textview=0x7f0b0009;
         public static final int left_drawer=0x7f0b0003;
-        public static final int num1=0x7f0b000a;
-        public static final int num2=0x7f0b000b;
-        public static final int num3=0x7f0b000c;
-        public static final int num4=0x7f0b000d;
-        public static final int num5=0x7f0b000e;
-        public static final int num6=0x7f0b000f;
-        public static final int num7=0x7f0b0010;
-        public static final int num8=0x7f0b0011;
-        public static final int num9=0x7f0b0012;
-        public static final int numberPicker=0x7f0b0008;
-        public static final int numberPickerDone=0x7f0b0009;
-        public static final int numberSelectorClose=0x7f0b0013;
+        public static final int num1=0x7f0b000c;
+        public static final int num2=0x7f0b000d;
+        public static final int num3=0x7f0b000e;
+        public static final int num4=0x7f0b000f;
+        public static final int num5=0x7f0b0010;
+        public static final int num6=0x7f0b0011;
+        public static final int num7=0x7f0b0012;
+        public static final int num8=0x7f0b0013;
+        public static final int num9=0x7f0b0014;
+        public static final int numberPicker=0x7f0b000a;
+        public static final int numberPickerDone=0x7f0b000b;
+        public static final int numberSelectorClose=0x7f0b0015;
         public static final int splashLogo=0x7f0b0002;
         public static final int sudoku_grid=0x7f0b0007;
         public static final int sudoku_timer=0x7f0b0006;
@@ -91,14 +101,17 @@ public final class R {
         public static final int activity_main=0x7f030000;
         public static final int drawer_list_item=0x7f030001;
         public static final int fragment_sudoku=0x7f030002;
-        public static final int popup_numberpicker=0x7f030003;
-        public static final int popup_numberselector=0x7f030004;
+        public static final int popup_hud=0x7f030003;
+        public static final int popup_numberpicker=0x7f030004;
+        public static final int popup_numberselector=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f0a0000;
         public static final int sudoku_grid=0x7f0a0001;
     }
     public static final class string {
+        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
+         */
         public static final int action_settings=0x7f080000;
         public static final int action_undo_last=0x7f080001;
         public static final int app_name=0x7f080002;
@@ -110,13 +123,14 @@ public final class R {
         public static final int title_activity_sudoku_grid=0x7f080008;
     }
     public static final class style {
-        /** 
+        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/styles.xml 
+
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
+ From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f090000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 

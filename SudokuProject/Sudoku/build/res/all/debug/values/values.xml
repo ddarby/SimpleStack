@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml -->
     <string-array name="sudoku_menu_timer_hide">
         <item>New Game</item>
         <item>Restart</item>
@@ -13,7 +14,7 @@
         <item>Show Timer</item>
         <item>Check For Win</item>
     </string-array>
-
+    <!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/colors.xml -->
     <color name="beige">#f5f5f5</color>
     <color name="black">#ff000000</color>
     <color name="black_lighter">#292929</color>
@@ -31,14 +32,14 @@
     <color name="light_gray">#e9e9e9</color>
     <color name="red">#992111</color>
     <color name="white">#ffffff</color>
-
+    <!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/dimens.xml -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="app_defaultsize_h">589.0dip</dimen>
     <dimen name="app_defaultsize_w">632.0dip</dimen>
     <dimen name="app_minimumsize_h">299.0dip</dimen>
     <dimen name="app_minimumsize_w">316.0dip</dimen>
-
+    <!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml -->
     <string name="action_settings">Settings</string>
     <string name="action_undo_last">Undo</string>
     <string name="app_name">Sudoku</string>
@@ -48,8 +49,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_sudoku_fragment">Sudoku</string>
     <string name="title_activity_sudoku_grid">MainActivity</string>
-
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    <!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/styles.xml -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
