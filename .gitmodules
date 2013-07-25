@@ -1,0 +1,3 @@
+[submodule "android_unitychat"]
+	path = android_unitychat
+	url = git@github.com:gfranks/android_unitychat.git
