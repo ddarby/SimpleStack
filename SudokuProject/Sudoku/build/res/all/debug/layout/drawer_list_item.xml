@@ -24,4 +24,4 @@
     android:paddingRight="16dp"
     android:textColor="#000"
     android:background="?android:attr/activatedBackgroundIndicator"
-    android:minHeight="?android:attr/listPreferredItemHeightSmall"/><!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/layout/drawer_list_item.xml -->
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"/><!-- From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/layout/drawer_list_item.xml -->

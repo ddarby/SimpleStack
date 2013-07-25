@@ -23,4 +23,4 @@
               android:divider="@android:color/transparent"
               android:dividerHeight="0dp"
               android:background="@drawable/fragment_bg"/>
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/layout/activity_main.xml -->

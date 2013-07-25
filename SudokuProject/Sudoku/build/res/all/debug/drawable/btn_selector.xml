@@ -7,4 +7,4 @@
     <item android:state_enabled="true" android:drawable="@drawable/btn_selector_normal" />
     <item android:state_focused="true" android:drawable="@drawable/btn_selector_selected" />
     <item android:drawable="@drawable/btn_selector_normal" />
-</selector><!-- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/drawable/btn_selector.xml -->
+</selector><!-- From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/drawable/btn_selector.xml -->

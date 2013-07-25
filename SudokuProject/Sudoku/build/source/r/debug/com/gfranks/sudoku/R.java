@@ -12,7 +12,7 @@ public final class R {
         public static final int simple=0x7f040000;
     }
     public static final class array {
-        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
+        /**  From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
          */
         public static final int sudoku_menu_timer_hide=0x7f050000;
         public static final int sudoku_menu_timer_show=0x7f050001;
@@ -20,7 +20,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/colors.xml 
+        /**  From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/colors.xml 
          */
         public static final int beige=0x7f060000;
         public static final int black=0x7f060001;
@@ -41,8 +41,8 @@ public final class R {
         public static final int white=0x7f060010;
     }
     public static final class dimen {
-        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/dimens.xml 
- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-sw720dp-land/dimens.xml 
+        /**  From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/dimens.xml 
+ From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-sw720dp-land/dimens.xml 
          */
         public static final int activity_horizontal_margin=0x7f070000;
         public static final int activity_vertical_margin=0x7f070001;
@@ -110,7 +110,7 @@ public final class R {
         public static final int sudoku_grid=0x7f0a0001;
     }
     public static final class string {
-        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
+        /**  From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/strings.xml 
          */
         public static final int action_settings=0x7f080000;
         public static final int action_undo_last=0x7f080001;
@@ -123,13 +123,13 @@ public final class R {
         public static final int title_activity_sudoku_grid=0x7f080008;
     }
     public static final class style {
-        /**  From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/styles.xml 
+        /**  From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
- From: file:/Users/Garrett/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-v11/styles.xml 
+ From: file:/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f090000;
