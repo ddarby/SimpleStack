@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sudoku/Sudoku.iml" filepath="$PROJECT_DIR$/Sudoku/Sudoku.iml" />
       <module fileurl="file://$PROJECT_DIR$/SudokuProject.iml" filepath="$PROJECT_DIR$/SudokuProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../android_unitychat/android_unitychat.iml" filepath="$PROJECT_DIR$/../android_unitychat/android_unitychat.iml" />
     </modules>
   </component>
 </project>

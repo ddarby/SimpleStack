@@ -1,6 +1,10 @@
 package com.gfranks.sudoku.fragments;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
@@ -9,18 +13,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.GridLayout;
 import android.widget.RelativeLayout;
 
 import com.gfranks.sudoku.R;
 import com.gfranks.sudoku.activities.MainActivity;
-import com.gfranks.sudoku.widget_helpers.SudokuGame;
-import com.gfranks.sudoku.widget_helpers.SudokuGrid;
+import com.gfranks.sudoku.utils.SudokuGame;
+import com.gfranks.sudoku.utils.SudokuGames;
 import com.gfranks.sudoku.widgets.SudokuBoard;
 
 public class SudokuFragment extends Fragment {
 
-    public static String ARGUMENT  = "argument";
+    public static final String TAG       = "SudokuFragment";
+    public static final String ARGUMENT  = "argument";
     public static final int NEW_GAME     = 0;
     public static final int RESTART_GAME = 1;
     public static final int SHOW_TIMER   = 2;
@@ -35,6 +39,8 @@ public class SudokuFragment extends Fragment {
 
     private boolean is_timer_shown = false;
     private boolean is_timer_started = false;
+
+    private static final String KEY_CURRENT_GAME = "current_sudoku_game";
 
     public SudokuFragment() {}
 
@@ -77,7 +83,34 @@ public class SudokuFragment extends Fragment {
                 break;
             case CHECK_WIN:
                 boolean isAWin = sudokuBoard.isAWin();
-                Log.e(getClass().getSimpleName().toString() + ".CheckForWin", "Is a win: " + isAWin);
+                String message = "Sorry, but you messed up somewhere along the way!!";
+                if (isAWin) {
+                    SharedPreferences prefs = getActivity().getSharedPreferences(KEY_CURRENT_GAME, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor ed = prefs.edit();
+                    ed.remove(KEY_CURRENT_GAME);
+                    ed.commit();
+                    message = "Congratulations!! You have successfully completed the board! Start a new game?";
+                }
+
+                AlertDialog dialog = new AlertDialog.Builder(getActivity()).create();
+                dialog.setTitle("Game Status");
+                dialog.setMessage(message);
+                dialog.setButton(AlertDialog.BUTTON_NEGATIVE, isAWin ? "NO" : "Dismiss", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+                if (isAWin) {
+                    dialog.setButton(AlertDialog.BUTTON_POSITIVE, "YES", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                            loadNewGame();
+                        }
+                    });
+                }
+                Log.e(TAG + ".CheckForWin", "Is a win: " + isAWin);
                 break;
             default:
                 break;
@@ -85,7 +118,17 @@ public class SudokuFragment extends Fragment {
     }
 
     public void loadNewGame() {
-        sudokuBoard.setCurrentGame(SudokuGame.getInstance().getNewGame());
+        SharedPreferences prefs = getActivity().getSharedPreferences(KEY_CURRENT_GAME, Context.MODE_PRIVATE);
+        String json = prefs.getString(KEY_CURRENT_GAME, null);
+        if (json != null) {
+            Log.e(TAG + ".loadNewGame", "Loading Current Game");
+            SudokuGame game = new SudokuGame(json);
+            SudokuGames.getInstance().setCurrentGame(game);
+            sudokuBoard.setCurrentGame(game);
+        } else {
+            Log.e(TAG + ".loadNewGame", "Loading New Game");
+            sudokuBoard.setCurrentGame(SudokuGames.getInstance().getNewGame());
+        }
     }
 
     public void restartCurrentGame() {
@@ -98,6 +141,19 @@ public class SudokuFragment extends Fragment {
 
     public void undoLastMove() {
         sudokuBoard.undoLastMove();
+    }
+
+    public void storeCurrentGame() {
+        Log.e(TAG + ".storeCurrentGame", "Storing Current Game");
+        try {
+            SharedPreferences prefs = getActivity().getSharedPreferences(KEY_CURRENT_GAME, Context.MODE_PRIVATE);
+            SharedPreferences.Editor ed = prefs.edit();
+            ed.putString(KEY_CURRENT_GAME, SudokuGames.getInstance().getCurrentGame().getGameAsJSON());
+            ed.commit();
+        } catch (NullPointerException e) {
+            // this throws a NPE even though it is successfull, fix is still in progress
+            e.printStackTrace();
+        }
     }
 
     private View.OnClickListener StartStopTimerListener = new View.OnClickListener() {

@@ -28,11 +28,13 @@ public class SudokuMoveDialog extends Dialog {
     };
     private TextView tv;
     private ArrayList<SudokuBoard.SudokuMove> moves;
+    private OnSudokuMoveSelectedListener listener;
 
-    public SudokuMoveDialog(Context context, SudokuMoveDialogType type, TextView tv, ArrayList<SudokuBoard.SudokuMove> moves) {
+    public SudokuMoveDialog(Context context, SudokuMoveDialogType type, TextView tv, ArrayList<SudokuBoard.SudokuMove> moves, OnSudokuMoveSelectedListener listener) {
         super(context, R.style.PopupDialog);
         this.tv = tv;
         this.moves = moves;
+        this.listener = listener;
         setCancelable(true);
         getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
@@ -103,6 +105,10 @@ public class SudokuMoveDialog extends Dialog {
                 moves.add(new SudokuBoard.SudokuMove(tv, tv.getText().toString(), ((Button)v).getText().toString()));
                 tv.setText(((Button) v).getText().toString());
                 tv.setTextColor(getContext().getResources().getColor(R.color.green));
+
+                if (listener != null) {
+                    listener.didSelectSudokuValue(tv, tv.getText().toString());
+                }
             }
         };
         num1.setOnClickListener(numberButtonListener);
@@ -120,5 +126,9 @@ public class SudokuMoveDialog extends Dialog {
                 dismiss();
             }
         });
+    }
+
+    public static interface OnSudokuMoveSelectedListener {
+        public void didSelectSudokuValue(TextView tv, String newValue);
     }
 }

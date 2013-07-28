@@ -28,6 +28,7 @@ import android.widget.Toast;
 import com.gfranks.sudoku.R;
 import com.gfranks.sudoku.dialogs.SudokuHUD;
 import com.gfranks.sudoku.fragments.SudokuFragment;
+//import com.unitychat.common.UnityChatHelper;
 
 public class MainActivity extends Activity {
 
@@ -40,6 +41,8 @@ public class MainActivity extends Activity {
     private ImageView logoImageView;
     private boolean splashShowing = true;
     private SudokuHUD hud;
+
+//    private UnityChatHelper chatHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,6 +184,18 @@ public class MainActivity extends Activity {
         }
 
         current_orientation = newConfig.orientation;
+    }
+
+    @Override
+    protected void onPause() {
+        sudokuFragment.storeCurrentGame();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        sudokuFragment.storeCurrentGame();
+        super.onDestroy();
     }
 
     public void timerShown() {
