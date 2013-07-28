@@ -33,6 +33,15 @@ public class SudokuGames {
             }
         }
 
+        ArrayList<SudokuGame.GridValueCoord> coords = (ArrayList<SudokuGame.GridValueCoord>)currentGame.getGridValueCoords().clone();
+        for (SudokuGame.GridValueCoord coord : currentGame.getGridValueCoords()) {
+            if (coord.hasListener) {
+                coords.remove(coord);
+            }
+        }
+
+        currentGame.setGridValueCoords(coords);
+
         return currentGame;
     }
 

@@ -165,6 +165,7 @@ public class MainActivity extends Activity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             sudokuFragment.loadArgument(position);
             mDrawerLayout.closeDrawer(mDrawerList);
+            mDrawerList.invalidateViews();
         }
     }
 
@@ -188,13 +189,13 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onPause() {
-        sudokuFragment.storeCurrentGame();
+//        sudokuFragment.storeCurrentGame();
         super.onPause();
     }
 
     @Override
     protected void onDestroy() {
-        sudokuFragment.storeCurrentGame();
+//        sudokuFragment.storeCurrentGame();
         super.onDestroy();
     }
 

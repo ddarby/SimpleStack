@@ -223,9 +223,9 @@
                 </color>
                 <color name="beige" >#f5f5f5
                 </color>
-                <color name="darkest_blue_off" >#135F7E
-                </color>
                 <color name="darker_blue_off" >#19678F
+                </color>
+                <color name="darkest_blue_off" >#135F7E
                 </color>
                 <color name="grid_gray_dark" >#6d6d6d
                 </color>
@@ -237,17 +237,17 @@
             <file
                 path="/Users/gfranks/Documents/AndroidStudioProjects/SimpleStack/SudokuProject/Sudoku/src/main/res/values/dimens.xml"
                 qualifiers="" >
-                <dimen name="app_minimumsize_h" >299.0dip
+                <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
                 <dimen name="app_minimumsize_w" >316.0dip
                 </dimen>
-                <dimen name="activity_horizontal_margin" >16dp
+                <dimen name="app_minimumsize_h" >299.0dip
                 </dimen>
                 <dimen name="activity_vertical_margin" >16dp
                 </dimen>
-                <dimen name="app_defaultsize_h" >589.0dip
-                </dimen>
                 <dimen name="app_defaultsize_w" >632.0dip
+                </dimen>
+                <dimen name="app_defaultsize_h" >589.0dip
                 </dimen>
             </file>
             <file
@@ -273,6 +273,8 @@ Check For Win
 
                 <string name="title_activity_sudoku_grid" >MainActivity
                 </string>
+                <string name="app_name" >Sudoku
+                </string>
 
                 <string-array name="sudoku_menu_timer_hide" >
                     <item>
@@ -289,19 +291,17 @@ Check For Win
                     </item>
                 </string-array>
 
-                <string name="app_name" >Sudoku
-                </string>
-                <string name="action_undo_last" >Undo
+                <string name="hello_world" >Hello world!
                 </string>
                 <string name="drawer_open" >Open navigation drawer
                 </string>
-                <string name="hello_world" >Hello world!
+                <string name="action_undo_last" >Undo
                 </string>
                 <string name="drawer_close" >Close navigation drawer
                 </string>
-                <string name="title_activity_sudoku_fragment" >Sudoku
-                </string>
                 <string name="app_not_available" >Sorry, there\'s no web browser available
+                </string>
+                <string name="title_activity_sudoku_fragment" >Sudoku
                 </string>
             </file>
             <file

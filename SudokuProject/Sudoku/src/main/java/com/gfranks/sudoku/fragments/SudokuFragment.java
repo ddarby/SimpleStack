@@ -55,7 +55,7 @@ public class SudokuFragment extends Fragment {
         startStopTimer.setOnClickListener(StartStopTimerListener);
         timer = (Chronometer)this.container.findViewById(R.id.sudoku_timer);
 
-        loadNewGame();
+        loadSavedGame();
 
         return this.container;
     }
@@ -110,6 +110,7 @@ public class SudokuFragment extends Fragment {
                         }
                     });
                 }
+                dialog.show();
                 Log.e(TAG + ".CheckForWin", "Is a win: " + isAWin);
                 break;
             default:
@@ -117,18 +118,22 @@ public class SudokuFragment extends Fragment {
         }
     }
 
-    public void loadNewGame() {
+    public void loadSavedGame() {
         SharedPreferences prefs = getActivity().getSharedPreferences(KEY_CURRENT_GAME, Context.MODE_PRIVATE);
         String json = prefs.getString(KEY_CURRENT_GAME, null);
         if (json != null) {
-            Log.e(TAG + ".loadNewGame", "Loading Current Game");
+            Log.e(TAG + ".loadSavedGame", "Loading Saved Game");
             SudokuGame game = new SudokuGame(json);
             SudokuGames.getInstance().setCurrentGame(game);
             sudokuBoard.setCurrentGame(game);
         } else {
-            Log.e(TAG + ".loadNewGame", "Loading New Game");
-            sudokuBoard.setCurrentGame(SudokuGames.getInstance().getNewGame());
+            loadNewGame();
         }
+    }
+
+    public void loadNewGame() {
+        Log.e(TAG + ".loadNewGame", "Loading New Game");
+        sudokuBoard.setCurrentGame(SudokuGames.getInstance().getNewGame());
     }
 
     public void restartCurrentGame() {
